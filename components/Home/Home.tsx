@@ -9,7 +9,7 @@ import Team from './Team/Team'
 import Pricing from './Pricing/Pricing'
 import SwiperSec from './Swiper/SwiperSec'
 
-import AOS, { init } from 'aos';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Home = () => {

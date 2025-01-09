@@ -17,8 +17,8 @@ const Hero = () => {
 
                     {/* Routing */}
                     <div className='flex sm:flex-row flex-col sm:items-center sm:gap-8 gap-5 mt-6'>
-                        <Scoial icon='/images/google.png' rating='4.2' label='Best Rated On Google' />
-                        <Scoial icon='/images/linkedin.png' rating='4.7' label='Best Rated On Linkedin' />
+                        <Scoial icon='/images/google.png' rating={4.2} label='Best Rated On Google' />
+                        <Scoial icon='/images/linkedin.png' rating={4.7} label='Best Rated On Linkedin' />
 
                     </div>
                     <div className='mt-8 flex flex-col sm:flex-row w-fit sm:items-center space-y-4 sm:space-y-0 sm:space-x-4'>

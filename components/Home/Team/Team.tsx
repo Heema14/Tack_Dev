@@ -1,7 +1,5 @@
 import React from 'react'
 import BoxText from '../About/BoxText'
-import BtnHero from '../Hero/BtnHero'
-import Image from 'next/image'
 import ImgTeam from './ImgTeam'
 
 const Team = () => {

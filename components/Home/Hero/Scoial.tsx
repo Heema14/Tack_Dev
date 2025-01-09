@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { BsStarHalf } from 'react-icons/bs'
 import { FaStar } from 'react-icons/fa'
@@ -6,7 +7,7 @@ const Scoial = ({ label, rating, icon }: { label: string, rating: number, icon: 
     return (
         <div className='flex gap-4'>
             <div className='flex items-center space-x-4'>
-                <img src={icon} alt={label} width={40} height={40} />
+                <Image src={icon} alt={label} width={40} height={40} />
             </div>
 
             <div className='flex flex-col '>

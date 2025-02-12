@@ -4,6 +4,15 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
+Domains for my website:
+
+https://tack-dev.vercel.app/
+
+https://tack-dev-git-main-heema20s-projects.vercel.app/
+
+https://tack-lz4117b9h-heema20s-projects.vercel.app/
+
+
 ```bash
 npm run dev
 # or

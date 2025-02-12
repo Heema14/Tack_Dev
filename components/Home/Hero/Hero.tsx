@@ -1,40 +1,44 @@
-'use client'
-import React from 'react'
-import Scoial from './Scoial'
-import BtnHero from './BtnHero'
-import Image from 'next/image'
+import SearchBox from "@/components/Helper/SearchBox";
+import Link from "next/link";
+import React from "react";
 
 const Hero = () => {
-    return (
-        <section id='Hero' className="relative w-full sm:h-screen pt-12 sm:pt-[24em] md:pt-[30em] lg:pt-9 bg-[url(../public/images/bg.png)] bg-cover bg-center flex justify-center flex-col">
-            <div className='w-[90%] md:w-[80%] mx-auto items-center flex flex-col-reverse lg:flex-row gap-6'>
+  return (
+    <section className="relative w-full h-[120vh] sm:h-screen">
+      <div className="absolute top-0 left-0 w-full h-full bg-gray-800 opacity-70"></div>
+      <video
+        src="/images/hero1.mp4"
+        autoPlay
+        muted
+        loop
+        preload="metadata"
+        className="w-full h-full object-cover"
+      ></video>
 
-                {/* textContent */}
-                <div data-aos='fade-up' className='w-11/12'>
-                    <p className='text-sm sm:text-base md:text-xl font-bold text-blue-950'>Make the Smartest Investent.</p>
-                    <h1 className='text-2xl md:text-3xl lg:text-4xl my-6 font-bold text-blue-950 leading-8'>Kickstart, Scale, and Thrive Faster with <span className='text-rose-700'>TechDev</span></h1>
-                    <p className='text-xs sm:text-sm md:text-base font-medium text-gray-700 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto veniam nesciunt odio exercitationem, alias eius maiores tempora recusandae ipsam voluptas voluptatum ea ducimus voluptatibus provident ratione</p>
+      <div className="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+        <div className="flex items-center justify-center flex-col w-full h-full">
+          <div data-aos="fade-up">
+            <h1 className="text-2xl mb-4 md:mb-3 text-center md:text-4xl lg:text-[45px] tracking-[0.7rem] text-white uppercase font-bold">
+              Lets Enjoy The Nature
+            </h1>
+            <p className="md:text-base text-center text-lg text-white font-normal">
+              Get the best prices on 2,000,000+ properties, World Wide
+            </p>
+          </div>
 
-                    {/* Routing */}
-                    <div className='flex sm:flex-row flex-col sm:items-center sm:gap-8 gap-5 mt-6'>
-                        <Scoial icon='/images/google.png' rating={4.2} label='Best Rated On Google' />
-                        <Scoial icon='/images/linkedin.png' rating={4.7} label='Best Rated On Linkedin' />
+          <SearchBox />
+          <Link
+            data-aos="fade-left"
+            className="rounded px-14 md:px-28 -mt-4 py-2.5 overflow-hidden group bg-rose-600 relative hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-red-400 transition-all ease-out duration-300"
+            href="#"
+          >
+            <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+            <span className="relative font-bold">Search</span>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-                    </div>
-                    <div className='mt-8 flex flex-col sm:flex-row w-fit sm:items-center space-y-4 sm:space-y-0 sm:space-x-4'>
-                        <BtnHero text='Get Free Trail' className='bg-rose-600 hover:bg-rose-800' />
-                        <BtnHero text='Create Account' className='bg-green-400 hover:bg-green-700' />
-                    </div>
-                </div>
-
-                {/* Image content */}
-                <div data-aos='fade-down' data-aos-delay='150' className=''>
-                    <Image className='imgAnim w-full sm:w-[80%] md:w-[70%] lg:w-full mx-auto lg:mx-0' src='/images/hero.jpg' alt='image' width={900} height={900} />
-                </div>
-
-            </div>
-        </section>
-    )
-}
-
-export default Hero
+export default Hero;

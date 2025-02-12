@@ -1,106 +1,113 @@
-export const navLink = [
+// Navbar information
+
+export const navLinks = [
   {
     id: 1,
-    url: "#Hero",
+    url: "#",
     label: "Home",
   },
   {
     id: 2,
-    url: "#Features",
-    label: "Features",
+    url: "#",
+    label: "About",
   },
   {
     id: 3,
-    url: "#Services",
-    label: "Services",
+    url: "#",
+    label: "Destination",
   },
   {
     id: 4,
-    url: "#ClientReview",
-    label: "Reviews",
+    url: "#",
+    label: "Blog",
   },
   {
     id: 5,
-    url: "#Team",
-    label: "Team",
+    url: "#",
+    label: "Dashboard",
   },
   {
     id: 6,
-    url: "#Pricing",
-    label: "Pricing",
-  },
-  {
-    id: 7,
-    url: "#footer",
+    url: "#",
     label: "Contact",
   },
 ];
 
-export const SolutionFoot = [
+export const Company = [
   {
     id: 1,
     url: "#footer",
-    label: "Enter Price",
+    label: "About Us",
   },
   {
     id: 2,
     url: "#footer",
-    label: "By work flow",
+    label: "Careers",
   },
   {
     id: 3,
     url: "#footer",
-    label: "By Team",
-  },
-];
-
-export const CompanyFoot = [
-  {
-    id: 1,
-    url: "#footer",
-    label: "About",
-  },
-  {
-    id: 2,
-    url: "#footer",
-    label: "News & Press",
-  },
-  {
-    id: 3,
-    url: "#footer",
-    label: "Our Customer",
+    label: "Blogs",
   },
   {
     id: 4,
     url: "#footer",
-    label: "Leadership",
+    label: "Gift Cards",
   },
   {
     id: 5,
     url: "#footer",
-    label: "Careers",
+    label: "Magazine",
   },
 ];
 
-export const ResourcesFoot = [
+export const Support = [
   {
     id: 1,
     url: "#footer",
-    label: "Blog",
+    label: "Contact",
   },
   {
     id: 2,
     url: "#footer",
-    label: "Webinar & Events",
+    label: "Legal Notice",
   },
   {
     id: 3,
     url: "#footer",
-    label: "Podcast",
+    label: "Privacy Policy",
   },
   {
     id: 4,
     url: "#footer",
-    label: "E-book & Guides",
+    label: "Terms & Conditions",
+  },
+  {
+    id: 5,
+    url: "#footer",
+    label: "Sitemap",
+  },
+];
+
+export const OtherServices = [
+  {
+    id: 1,
+    url: "#footer",
+    label: "Car hire",
+  },
+  {
+    id: 2,
+    url: "#footer",
+    label: "Activity Finder",
+  },
+  {
+    id: 3,
+    url: "#footer",
+    label: "Tour List",
+  },
+  {
+    id: 4,
+    url: "#footer",
+    label: "Flight Finder",
   },
 ];
